@@ -1,0 +1,146 @@
+/* Theme Switch and Sign In Button Styles */
+
+/* Theme Variables */
+:root {
+    --theme-transition: all 0.3s ease;
+}
+
+/* Light Theme (Default) */
+.theme-mode-light {
+    --theme-background: #ffffff;
+    --theme-text: #231e29;
+    --theme-primary: var(--main-color);
+    --theme-secondary: var(--color-two);
+}
+
+/* Dark Theme */
+.theme-mode-dark {
+    --theme-background: #121212;
+    --theme-text: #f5f5f5;
+    --theme-primary: var(--color-two);
+    --theme-secondary: var(--main-color);
+}
+
+/* Apply Theme Colors */
+body {
+    transition: var(--theme-transition);
+}
+
+body.theme-mode-dark {
+    background-color: var(--theme-background);
+}
+
+body.theme-mode-dark .main-header:not(.fixed-header) {
+    background-color: rgba(18, 18, 18, 0.8);
+}
+
+body.theme-mode-dark .page-wrapper:not(.image-layer) {
+    background-color: var(--theme-background);
+}
+
+body.theme-mode-dark .sec-title_heading,
+body.theme-mode-dark .footer-text,
+body.theme-mode-dark .footer_copyright,
+body.theme-mode-dark .counter-block_one-text {
+    color: var(--theme-text);
+}
+
+/* Header Buttons Styling */
+.header-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-wrapper {
+    margin-right: 15px;
+}
+
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.theme-toggle-btn:hover {
+    background: rgba(var(--main-color-rgb), 0.2);
+}
+
+.theme-toggle-btn i {
+    font-size: 18px;
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+.theme-mode-light .dark-icon,
+.theme-mode-dark .light-icon {
+    display: none;
+}
+
+.theme-mode-light .light-icon,
+.theme-mode-dark .dark-icon {
+    display: block;
+}
+
+/* Sign In Button */
+.sign-in-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--main-color);
+    background: linear-gradient(to top, var(--main-color) 0%, var(--color-two) 100%);
+    color: var(--white-color);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+.sign-in-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(var(--main-color-rgb), 0.3);
+}
+
+.sign-in-btn i {
+    margin-right: 8px;
+}
+
+.sign-in-btn span {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 767px) {
+    .header-buttons {
+        margin-left: 10px;
+    }
+    
+    .theme-toggle-wrapper {
+        margin-right: 10px;
+    }
+    
+    .sign-in-btn {
+        padding: 8px 15px;
+    }
+    
+    .sign-in-btn span {
+        display: none;
+    }
+    
+    .sign-in-btn i {
+        margin-right: 0;
+    }
+}

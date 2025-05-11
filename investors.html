@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Adopt - Investment | Investors</title>
+<!-- Stylesheets -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="assets/images/logoAdopt.png" type="image/x-icon">
+<link rel="icon" href="assets/images/logoAdopt.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<style>
+    .page-title {
+        padding: 120px 0;
+    }
+    .page-title h1 {
+        color: var(--white-color);
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .investors-intro {
+        padding: 80px 0;
+    }
+    .investors-grid {
+        padding: 80px 0;
+    }
+    .investor-item {
+        background-color: var(--bg-color-two);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+    .investor-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .investor-image {
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    .investor-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .investor-content {
+        padding: 25px;
+    }
+    .investor-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: var(--white-color);
+    }
+    .investor-role {
+        color: var(--main-color);
+        font-size: 14px;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    .investor-description {
+        color: var(--white-color);
+        opacity: 0.8;
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .investor-social {
+        display: flex;
+        gap: 10px;
+    }
+    .investor-social a {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-color-one);
+        color: var(--white-color);
+        transition: all 0.3s ease;
+    }
+    .investor-social a:hover {
+        background-color: var(--main-color);
+        color: var(--white-color);
+    }
+    .process-section {
+        padding: 80px 0;
+        background-color: var(--bg-color-two);
+    }
+    .process-title {
+        margin-bottom: 50px;
+    }
+    .process-item {
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+    .process-number {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+        background-color: var(--main-color);
+        color: var(--white-color);
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 auto 20px;
+    }
+    .process-heading {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: var(--white-color);
+    }
+    .join-section {
+        padding: 100px 0;
+        text-align: center;
+    }
+    .join-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--white-color);
+        margin-bottom: 30px;
+    }
+    .btn-custom {
+        display: inline-block;
+        padding: 12px 35px;
+        background-color: var(--main-color);
+        color: var(--white-color);
+        border-radius: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .btn-custom:hover {
+        background-color: var(--color-two);
+        color: var(--white-color);
+    }
+    .list-style-one {
+        margin-bottom: 30px;
+    }
+    .list-style-one li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 15px;
+        color: var(--white-color);
+    }
+    .list-style-one li:before {
+        content: "\f00c";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        color: var(--main-color);
+    }
+
+    .page-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.investors-intro,
+.investors-grid,
+.investor-item {
+  position: relative;
+  z-index: 2;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page-wrapper image-layer" style="background-image:url(assets/images/background/4.jpg)">
+  <!-- Main Header -->
+	<header class="main-header">
+		
+		<!-- Header Lower -->
+		<div class="header-lower">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="d-flex justify-content-between align-items-center flex-wrap">
+						
+						<div class="logo-box">
+							<div class="logo"><a href="index.html"><img src="assets/images/logoAdopt.png" alt="" title=""></a></div>
+						</div>
+						
+						<div class="nav-outer d-flex flex-wrap">
+							<!-- Main Menu -->
+							<nav class="main-menu navbar-expand-md">
+								<div class="navbar-header">
+									<!-- Toggle Button -->    	
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								
+								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+									<ul class="navigation clearfix">
+										<li><a href="index.html">Home</a></li>
+										
+										<li><a href="startups.html">Startups</a></li>
+										<li><a href="investors.html">Investors</a></li>
+										 
+										<li><a href="about.html">About</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+							</nav>
+							<!-- Add Sign In button next to nav -->
+							<a href="signin.html" class="btn btn-primary ml-3">Sign In</a>
+						</div>
+
+						<!-- Mobile Navigation Toggler -->
+						<div class="mobile-nav-toggler">
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Header Lower-->
+		
+		<!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+			<div class="close-btn"><span class="icon fa-solid fa-xmark fa-fw"></span></div>
+			
+			<nav class="menu-box">
+				<div class="nav-logo"><a href="index.html"><img src="assets/images/mobile-logo.png" alt="" title=""></a></div>
+				<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+			</nav>
+		</div>
+		<!-- End Mobile Menu -->
+	
+	</header>
+	<!-- End Main Header -->
+    
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="auto-container">
+            <h1 class="page-title_heading">Our Investors</h1>
+            <div class="page-title_text">Meet the visionary investors who are powering the next generation of disruptive startups.</div>
+        </div>
+    </section>
+    <!-- End Page Title -->
+    
+    <!-- Investors Intro Section -->
+    <section class="investors-intro">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-6 col-md-12">
+                    <h2 class="sec-title_heading">Why Invest With Us?</h2>
+                    <div class="text mb-4">
+                        <p>Adopt Investment offers unparalleled opportunities to invest in the most promising startups across various industries. Our rigorous selection process ensures that only the highest quality companies make it into our portfolio.</p>
+                        <p>By joining our investor network, you'll gain access to:</p>
+                    </div>
+                    <ul class="list-style-one">
+                        <li>Pre-vetted investment opportunities</li>
+                        <li>Diverse portfolio of innovative startups</li>
+                        <li>Regular performance updates and reports</li>
+                        <li>Networking events with founders and fellow investors</li>
+                        <li>Dedicated support from our investment team</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="image-box">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzaW5lc3MlMjBtZWV0aW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Why Invest With Us" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Investors Intro Section -->
+    
+    <!-- Investment Process Section -->
+    <section class="process-section">
+        <div class="auto-container">
+            <h2 class="sec-title_heading text-center process-title">Our Investment Process</h2>
+            
+            <div class="row clearfix">
+                <!-- Process Item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="process-item">
+                        <div class="process-number">01</div>
+                        <h3 class="process-heading">Startup Screening</h3>
+                        <p>We rigorously evaluate startups based on market potential, team strength, and innovation.</p>
+                    </div>
+                </div>
+                
+                <!-- Process Item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="process-item">
+                        <div class="process-number">02</div>
+                        <h3 class="process-heading">Due Diligence</h3>
+                        <p>In-depth analysis of business models, financials, and growth strategies.</p>
+                    </div>
+                </div>
+                
+                <!-- Process Item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="process-item">
+                        <div class="process-number">03</div>
+                        <h3 class="process-heading">Investment</h3>
+                        <p>Strategic capital deployment with clear terms and expectations for both parties.</p>
+                    </div>
+                </div>
+                
+                <!-- Process Item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="process-item">
+                        <div class="process-number">04</div>
+                        <h3 class="process-heading">Growth Support</h3>
+                        <p>Ongoing guidance, mentorship, and strategic connections to maximize growth potential.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Investment Process Section -->
+    
+    <!-- Investors Grid Section -->
+    <section class="investors-grid">
+        <div class="auto-container">
+            <h2 class="sec-title_heading text-center mb-5">Meet Our Lead Investors</h2>
+            
+            <div class="row clearfix">
+                <!-- Investor Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="investor-item">
+                        <div class="investor-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YnVzaW5lc3N3b21hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Sarah Johnson">
+                        </div>
+                        <div class="investor-content">
+                            <h3 class="investor-title">Sarah Johnson</h3>
+                            <span class="investor-role">Managing Partner</span>
+                            <p class="investor-description">Former tech executive with over 15 years of experience in scaling technology companies and mentoring founders.</p>
+                            <div class="investor-social">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Investor Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="investor-item">
+                        <div class="investor-image">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YnVzaW5lc3NtYW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Michael Chen">
+                        </div>
+                        <div class="investor-content">
+                            <h3 class="investor-title">Michael Chen</h3>
+                            <span class="investor-role">General Partner</span>
+                            <p class="investor-description">Serial entrepreneur who built and sold three successful tech startups. Expert in SaaS and marketplace models.</p>
+                            <div class="investor-social">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Investor Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="investor-item">
+                        <div class="investor-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2luZXNzbWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="David Rodriguez">
+                        </div>
+                        <div class="investor-content">
+                            <h3 class="investor-title">David Rodriguez</h3>
+                            <span class="investor-role">Investment Director</span>
+                            <p class="investor-description">Financial strategist with extensive experience in venture capital and investment banking across multiple industry verticals.</p>
+                            <div class="investor-social">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Investor Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="investor-item">
+                        <div class="investor-image">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJ1c2luZXNzd29tYW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Emily Patel">
+                        </div>
+                        <div class="investor-content">
+                            <h3 class="investor-title">Emily Patel</h3>
+                            <span class="investor-role">Partner</span>
+                            <p class="investor-description">Specialist in healthcare and biotech investments with a strong background in product development and regulatory affairs.</p>
+                            <div class="investor-social">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Investor Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="investor-item">
+                        <div class="investor-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJ1c2luZXNzbWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="Thomas Wilson">
+                        </div>
+                        <div class="investor-content">
+                            <h3 class="investor-title">Thomas Wilson</h3>
+                            <span class="investor-role">Partner</span>
+                            <p class="investor-description">Expert in fintech and blockchain technologies with strong connections to financial institutions and regulatory bodies.</p>
+                            <div class="investor-social">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Investor Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="investor-item">
+                        <div class="investor-image">
+                            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJ1c2luZXNzd29tYW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Olivia Brown">
+                        </div>
+                        <div class="investor-content">
+                            <h3 class="investor-title">Olivia Brown</h3>
+                            <span class="investor-role">Partner</span>
+                            <p class="investor-description">Focuses on consumer-facing startups and has a strong background in marketing, branding, and go-to-market strategies.</p>
+                            <div class="investor-social">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Investors Grid Section -->
+    
+    <!-- Join Section -->
+    <section class="join-section">
+        <div class="auto-container">
+            <h2 class="join-title">Ready to Start Your Investment Journey?</h2>
+            <a href="contact.html" class="btn-custom">Become an Investor</a>
+        </div>
+    </section>
+    <!-- End Join Section -->
+    
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="auto-container">
+            <!-- Widgets Section -->
+            <div class="widgets-section">
+                <div class="row clearfix">
+                    
+                    <!-- Footer Column -->
+                    <div class="footer-column col-lg-8 col-md-12 col-sm-12">
+                        <div class="footer-text">Let's grab some coffee. <br> We're nestled in the heart of a bustling metropolis <br> but occasionally venture to the tranquil countryside</div>
+                        <h2>Interested in working with us? <a href="mailto:hello@Adopt-Investment.io">hello@Adopt-Investment.io</a></h2>
+                        <ul class="footer_socials">
+                            <li><a href="https://www.dribbble.com">Dribbble <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="https://www.behance.net">Behance <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="https://www.facebook.com">Facebook <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="https://www.instagram.com">Instagram <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Footer Column -->
+                    <div class="footer-column col-lg-4 col-md-12 col-sm-12">
+                        <ul class="footer_navs">
+                            <li><a href="index.html">Home <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="about.html">About <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="work.html">work <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="journal.html">journal <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="contact.html">Contact <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="footer_copyright">&copy; 2025Adopt  -  Made by Webtroops</div>
+                    <a class="backtop down-box scroll-to-target" data-target=".page-wrapper">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Main Footer -->
+    
+</div>
+<!-- End PageWrapper -->
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/cursor.js"></script>
+</body>
+</html>

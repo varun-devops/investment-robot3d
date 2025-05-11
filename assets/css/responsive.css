@@ -1,0 +1,466 @@
+/* Contra Creative Agency Business HTML-5 Template */
+
+@media only screen and (max-width: 1400px){
+
+	.journel-two .journel-block_one{
+		width:25%;
+	}
+
+}
+
+@media only screen and (max-width: 1300px){
+
+	.main-header .main-menu .navigation > li > a{
+		font-size: 16px;
+	}
+	
+	.single-work_image,
+	.journel-detail_image{
+		padding-right:0px;
+	}
+
+}
+
+@media only screen and (max-width: 1240px){
+
+	.banner-one_text-two{
+		font-size:20px;
+		line-height:30px;
+		padding-right:50px;
+	}
+	
+	.banner-one_text{
+		font-size:20px;
+		line-height:30px;
+		padding-right:50px;
+	}
+	
+	.journel-one .journel-block_one {
+		width: 25%;
+	}
+	
+	.counter-block_one-inner{
+		padding:30px 30px;
+	}
+	
+	.stats-one_contact-inner{
+		padding:22px 15px;
+	}
+	
+	.stats-one_contact-content .text{
+		font-size:18px;
+	}
+	
+	.counter-block_one-counter{
+		font-size:60px;
+	}
+	
+}
+
+@media only screen and (max-width: 1140px){
+	
+	h1 {
+		line-height: 120px;
+		font-size: 120px;
+	}
+	
+	.journel-one .journel-block_one {
+		width: 33.333%;
+	}
+	
+	.stats-one_contact-content .text {
+		font-size: 16px;
+	}
+	
+	.journel-two .journel-block_one{
+		width:33.333%;
+	}
+
+}
+	
+@media only screen and (max-width: 1023px){
+	
+	.main-header .main-box .logo-box {
+		position:relative;
+		left:0px;
+		top:0px;
+		right:0px;
+		bottom:0px;
+		margin:0px;
+		text-align:left;
+	}
+	
+	.main-header .outer-box{
+		position: static;
+		display:block;
+	}
+
+	.main-header{
+		position:relative;
+		background-color: var(--color-two);
+	}
+	
+	.main-header .mobile-nav-toggler{
+		display:block;
+		margin-left: 20px;
+	}
+	
+	.main-header .sticky-header .mobile-nav-toggler{
+		display:block;
+	}
+	
+	.main-header .nav-outer,
+	.main-header .sticky-header .main-menu{
+		display:none;
+	}
+	
+	.main-header #navbarSupportedContent{
+		display:block;
+	}
+	
+	.main-header .mCSB_inside > .mCSB_container{
+		margin-right:0px;
+	}
+
+	.main-header .outer-box{
+		margin-left: 0px;
+	}
+	
+	.main-header .main-menu{
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 991px){
+
+	.banner-one{
+		padding-top:100px;
+	}
+	
+	h3 {
+		line-height: 36px;
+		font-size: 26px;
+	}
+	
+	.service-block_one-inner {
+		padding: 20px 30px;
+	}
+	
+	.journel-one .journel-block_one {
+		width: 50%;
+	}
+	
+	.awards-block_one-title{
+		font-size:26px;
+	}
+	
+	.main-footer h2{
+		font-size:40px;
+		line-height:50px;
+	}
+
+	.page-title{
+		padding-top:100px;
+	}
+	
+	.team-block_one-image{
+		position:relative;
+		right:0px;
+		margin-top:20px;
+	}
+	
+	.team-block_one-inner{
+		padding-bottom:0px;
+		text-align:center;
+		padding-left:0px;
+	}
+	
+	.team-block_one-socials{
+		margin-top:30px;
+	}
+	
+	.team-block_one-inner::before{
+		top:0px;
+	}
+	
+	.journel-two .journel-block_one{
+		width:50%;
+	}
+	
+	.single-work .column:nth-child(2),
+	.journel-detail .column:nth-child(2){
+		order:1;
+	}
+	
+	.single-work .column:nth-child(1),
+	.journel-detail .column:nth-child(1){
+		order:2;
+	}
+	
+	.single-work,
+	.journel-detail{
+		padding-top:100px;
+	}
+
+}
+
+@media only screen and (max-width: 820px){
+
+	.banner-one .down-box{
+		display:none;
+	}
+	
+}
+
+@media only screen and (max-width: 767px){
+	
+	.main-header .sticky-header .outer-box{
+		display:block;
+		right: 0px;
+		left: auto;
+		top:0px;
+	}
+
+	.main-header .main-menu{
+		width:100%;
+		display:none;
+	}
+	
+	.main-header .main-menu .navbar-collapse > .navigation li.dropdown:after,
+	.main-header .main-menu .navigation > li > ul:before{
+		display:none !important;	
+	}
+	
+	.main-header .main-box .logo-box{
+		float:none;
+		text-align:center;
+		padding-bottom:10px;
+	}
+
+	.main-header .header-lower .outer-box{
+		position:relative;
+		z-index:12;
+		display:block;
+	}
+	
+	.main-header .main-menu .navbar-header .navbar-toggler{
+		display: inline-block;
+		z-index: 12;
+		width: 50px;
+		height: 40px;
+		float: none;
+		padding: 0px;
+		text-align: center;
+		border-radius: 0px;
+		background: none;
+		border: 1px solid #ffffff;
+	}
+	
+	.main-header .main-menu .navbar-header .navbar-toggler .icon-bar{
+		position: relative;
+		background: #ffffff;
+		height: 2px;
+		width: 26px;
+		display: block;
+		margin:0 auto;
+		margin:5px 11px;
+	}
+	
+	.main-header .nav-outer .mobile-nav-toggler{
+		display: block;
+	}
+	
+	.main-header #navbarSupportedContent{
+		display:block;
+	}
+	
+	.main-header .mCSB_inside > .mCSB_container{
+		margin-right:0px;
+	}
+	
+	h1 {
+		line-height: 80px;
+		font-size: 80px;
+	}
+	
+	.banner-one_text{
+		padding-right:0px;
+		margin-bottom:30px;
+	}
+	
+	.counter-block_one-counter {
+		font-size: 40px;
+	}
+	
+	.stats-one_contact-inner {
+		padding: 10px 10px;
+	}
+	
+	.stats-one_contact-content{
+		padding:20px 20px;
+	}
+	
+	.awards-block_one-arrow,
+	.stats-one_contact-icon{
+		display:none;
+	}
+	
+	.footer-bottom{
+		padding:15px 0px;
+	}
+	
+	.go-top_top,
+	.footer_copyright{
+		font-size:16px;
+	}
+	
+	.page-title_heading{
+		font-size:70px;
+		line-height:80px;
+	}
+	
+	.team-one .title-box h2{
+		font-size:26px;
+		line-height:36px;
+	}
+	
+	.stats-one.style-two{
+		padding-top:60px;
+	}
+	
+	.journel-detail_title{
+		font-size:40px;
+		line-height:50px;
+	}
+	
+	.journel-detail p{
+		font-size:16px;
+		line-height:26px;
+	}
+	
+}
+
+@media only screen and (max-width: 599px){
+
+	.banner-one_text-two,
+	.banner-one_text{
+		padding-right: 0px;
+	}
+
+	.banner-one_text-two br,
+	.banner-one_text br{
+		display:none;
+	}
+	
+	.journel-one .journel-block_one {
+		width: 100%;
+	}
+	
+	.stats-one .stats-one_contact-column,
+	.stats-one .counter-block_one{
+		width:100%;
+	}
+	
+	.counter-block_one-inner{
+		border-right:0px;
+	}
+	
+	.awards-block_one-content{
+		padding:0px 0px;
+	}
+	
+	.awards-block_one-number{
+		position:relative;
+		margin-bottom:20px;
+	}
+	
+	.go-top_top{
+		margin-top:15px;
+	}
+	
+	.journel-two .journel-block_one{
+		width:100%;
+	}
+	
+	.contact-one_heading{
+		font-size:30px;
+		line-height:40px;
+	}
+	
+	
+
+}
+
+@media only screen and (max-width: 479px) {
+	
+	h1 {
+		line-height: 40px;
+		font-size: 40px;
+	}
+	
+	.single-work_title,
+	h2 {
+		line-height: 38px;
+		font-size: 28px;
+	}
+	
+	.service-block_one-heading a br{
+		display:none;
+	}
+	
+	.gallery-block_one-content {
+		padding: 15px 15px;
+	}
+	
+	.service-block_one-inner {
+		padding: 20px 20px;
+	}
+	
+	.single-work_list li span,
+	.single-work p,
+	.banner-one_text-two,
+	.banner-one_text {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	
+	.testimonial-block_one-content {
+		padding: 15px 15px;
+	}
+	
+	.contact-one_heading{
+		font-size:20px;
+		line-height:30px;
+	}
+	
+	.counter-block_one-text{
+		font-size:16px;
+	}
+	
+	.main-footer h2 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	.page-title_heading {
+		font-size: 50px;
+		line-height: 60px;
+	}
+	
+	.team-one .title-box h2 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.journel-detail_title{
+		font-size:24px;
+		line-height:34px;
+	}
+	
+	.contact-one_list li{
+		font-size:18px;
+		line-height:28px;
+	}
+
+}

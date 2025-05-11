@@ -1,0 +1,66 @@
+/* Company Logos Slider Styles */
+.company-logos {
+    display: flex
+;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.company-logos .slick-list {
+    width: 100%;
+    overflow: hidden;
+}
+
+.company-logos .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.company-logos .slick-slide {
+    margin: 0 20px;
+    opacity: 0.7;
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.company-logos .slick-slide:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.company-logos img {
+    max-width: 120px;
+    height: 36px;
+    display: inline-block !important;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+}
+
+.theme-mode-light .company-logos img {
+    filter: brightness(0);
+}
+
+.company-logos-section {
+    padding: 70px 0;
+    background-color: var(--color-three);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.theme-mode-light .company-logos-section {
+    background-color: var(--white-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.company-logos-title {
+    margin-bottom: 40px;
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.theme-mode-light .company-logos-title {
+    color: var(--color-four);
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Adopt - Investment | Startups</title>
+<!-- Stylesheets -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="assets/images/logoAdopt.png" type="image/x-icon">
+<link rel="icon" href="assets/images/logoAdopt.png" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<style>
+    .page-title {
+        padding: 120px 0;
+    }
+    .page-title h1 {
+        color: var(--white-color);
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .startup-grid {
+        padding: 80px 0;
+    }
+    .startup-item {
+        background-color: var(--bg-color-two);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+    .startup-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .startup-image {
+        height: 200px;
+        overflow: hidden;
+    }
+    .startup-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .startup-content {
+        padding: 25px;
+    }
+    .startup-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: var(--white-color);
+    }
+    .startup-category {
+        color: var(--main-color);
+        font-size: 14px;
+        margin-bottom: 15px;
+        display: inline-block;
+        padding: 5px 12px;
+        background-color: rgba(var(--main-color-rgb), 0.1);
+        border-radius: 20px;
+    }
+    .startup-description {
+        color: var(--white-color);
+        opacity: 0.8;
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .startup-link {
+        display: inline-block;
+        color: var(--main-color);
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    .startup-link:hover {
+        color: var(--color-two);
+    }
+    .filters-container {
+        margin-bottom: 40px;
+    }
+    .filter-button {
+        padding: 8px 20px;
+        margin: 0 5px 10px;
+        background: var(--bg-color-two);
+        border: none;
+        border-radius: 30px;
+        color: var(--white-color);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .filter-button.active, .filter-button:hover {
+        background: var(--main-color);
+        color: var(--white-color);
+    }
+    .page-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.startup-grid,
+.startup-item {
+  position: relative;
+  z-index: 2;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page-wrapper image-layer" style="background-image:url(assets/images/background/4.jpg)">
+    <!-- Main Header -->
+	<header class="main-header">
+		
+		<!-- Header Lower -->
+		<div class="header-lower">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="d-flex justify-content-between align-items-center flex-wrap">
+						
+						<div class="logo-box">
+							<div class="logo"><a href="index.html"><img src="assets/images/logoAdopt.png" alt="" title=""></a></div>
+						</div>
+						
+						<div class="nav-outer d-flex flex-wrap">
+							<!-- Main Menu -->
+							<nav class="main-menu navbar-expand-md">
+								<div class="navbar-header">
+									<!-- Toggle Button -->    	
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								
+								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+									<ul class="navigation clearfix">
+										<li><a href="index.html">Home</a></li>
+										
+										<li><a href="startups.html">Startups</a></li>
+										<li><a href="investors.html">Investors</a></li>
+										 
+										<li><a href="about.html">About</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+							</nav>
+							<!-- Add Sign In button next to nav -->
+							<a href="signin.html" class="btn btn-primary ml-3">Sign In</a>
+						</div>
+
+						<!-- Mobile Navigation Toggler -->
+						<div class="mobile-nav-toggler">
+							<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Header Lower-->
+		
+		<!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+			<div class="close-btn"><span class="icon fa-solid fa-xmark fa-fw"></span></div>
+			
+			<nav class="menu-box">
+				<div class="nav-logo"><a href="index.html"><img src="assets/images/mobile-logo.png" alt="" title=""></a></div>
+				<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+			</nav>
+		</div>
+		<!-- End Mobile Menu -->
+	
+	</header>
+	<!-- End Main Header -->
+    
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="auto-container">
+            <h1 class="page-title_heading">Our Startups</h1>
+            <div class="page-title_text">Discover innovative startups that are disrupting industries and creating new opportunities.</div>
+        </div>
+    </section>
+    <!-- End Page Title -->
+    
+    <!-- Startup Grid Section -->
+    <section class="startup-grid">
+        <div class="auto-container">
+            <div class="filters-container text-center">
+                <button class="filter-button active" data-filter="all">All Categories</button>
+                <button class="filter-button" data-filter="fintech">Fintech</button>
+                <button class="filter-button" data-filter="saas">SaaS</button>
+                <button class="filter-button" data-filter="ai">AI & ML</button>
+                <button class="filter-button" data-filter="health">Healthcare</button>
+                <button class="filter-button" data-filter="edu">EdTech</button>
+            </div>
+            
+            <div class="row clearfix">
+                <!-- Startup Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 startup-item fintech">
+                    <div class="startup-inner">
+                        <div class="startup-image">
+                            <img src="https://images.unsplash.com/photo-1633158829799-56bdf8d37ecb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmludGVjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Fintech Startup">
+                        </div>
+                        <div class="startup-content">
+                            <span class="startup-category">Fintech</span>
+                            <h3 class="startup-title">PaySmart</h3>
+                            <p class="startup-description">Revolutionary payment solution helping businesses process transactions securely with lower fees and faster settlements.</p>
+                            <a href="#" class="startup-link">Learn More <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Startup Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 startup-item saas">
+                    <div class="startup-inner">
+                        <div class="startup-image">
+                            <img src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2Fhc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="SaaS Startup">
+                        </div>
+                        <div class="startup-content">
+                            <span class="startup-category">SaaS</span>
+                            <h3 class="startup-title">CloudOps</h3>
+                            <p class="startup-description">Enterprise-grade cloud operations platform that automates infrastructure management and reduces operational costs.</p>
+                            <a href="#" class="startup-link">Learn More <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Startup Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 startup-item ai">
+                    <div class="startup-inner">
+                        <div class="startup-image">
+                            <img src="https://images.unsplash.com/photo-1677442135117-930641972228?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YWklMjBtbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="AI Startup">
+                        </div>
+                        <div class="startup-content">
+                            <span class="startup-category">AI & ML</span>
+                            <h3 class="startup-title">Intellisense</h3>
+                            <p class="startup-description">Advanced AI solutions for predictive analytics, offering businesses actionable insights from complex data sets.</p>
+                            <a href="#" class="startup-link">Learn More <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Startup Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 startup-item health">
+                    <div class="startup-inner">
+                        <div class="startup-image">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhbHRoY2FyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="Healthcare Startup">
+                        </div>
+                        <div class="startup-content">
+                            <span class="startup-category">Healthcare</span>
+                            <h3 class="startup-title">MedConnect</h3>
+                            <p class="startup-description">Digital health platform connecting patients with healthcare providers for seamless telemedicine experiences.</p>
+                            <a href="#" class="startup-link">Learn More <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Startup Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 startup-item edu">
+                    <div class="startup-inner">
+                        <div class="startup-image">
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZWR1Y2F0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60" alt="EdTech Startup">
+                        </div>
+                        <div class="startup-content">
+                            <span class="startup-category">EdTech</span>
+                            <h3 class="startup-title">LearnSpace</h3>
+                            <p class="startup-description">Interactive learning platform that personalizes education with cutting-edge technology and engaging content.</p>
+                            <a href="#" class="startup-link">Learn More <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Startup Item -->
+                <div class="col-lg-4 col-md-6 col-sm-12 startup-item fintech">
+                    <div class="startup-inner">
+                        <div class="startup-image">
+                            <img src="https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGZpbmFuY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60" alt="Wealth Management Startup">
+                        </div>
+                        <div class="startup-content">
+                            <span class="startup-category">Fintech</span>
+                            <h3 class="startup-title">WealthWise</h3>
+                            <p class="startup-description">Smart investment platform democratizing access to financial markets with AI-driven portfolio management.</p>
+                            <a href="#" class="startup-link">Learn More <i class="fa-solid fa-arrow-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Startup Grid Section -->
+    
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="auto-container">
+            <!-- Widgets Section -->
+            <div class="widgets-section">
+                <div class="row clearfix">
+                    
+                    <!-- Footer Column -->
+                    <div class="footer-column col-lg-8 col-md-12 col-sm-12">
+                        <div class="footer-text">Let's grab some coffee. <br> We're nestled in the heart of a bustling metropolis <br> but occasionally venture to the tranquil countryside</div>
+                        <h2>Interested in working with us? <a href="mailto:hello@Adopt-Investment.io">hello@Adopt-Investment.io</a></h2>
+                        <ul class="footer_socials">
+                            <li><a href="https://www.dribbble.com">Dribbble <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="https://www.behance.net">Behance <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="https://www.facebook.com">Facebook <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="https://www.instagram.com">Instagram <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Footer Column -->
+                    <div class="footer-column col-lg-4 col-md-12 col-sm-12">
+                        <ul class="footer_navs">
+                            <li><a href="index.html">Home <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="about.html">About <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="work.html">work <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="journal.html">journal <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                            <li><a href="contact.html">Contact <i class="fa-solid fa-arrow-right fa-fw"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="footer_copyright">&copy; 2025Adopt  -  Made by Webtroops</div>
+                    <a class="backtop down-box scroll-to-target" data-target=".page-wrapper">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Main Footer -->
+    
+</div>
+<!-- End PageWrapper -->
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/cursor.js"></script>
+<script>
+    $(document).ready(function(){
+        // Filter functionality
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+            
+            $(".filter-button").removeClass("active");
+            $(this).addClass("active");
+            
+            if(value == "all") {
+                $(".startup-item").show();
+            } else {
+                $(".startup-item").not("." + value).hide();
+                $(".startup-item." + value).show();
+            }
+        });
+    });
+</script>
+</body>
+</html>
